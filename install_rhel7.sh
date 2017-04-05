@@ -2,7 +2,7 @@
 # install yamledit to be used with ansible to update yaml files
 # this must be done on your master, infra and node hosts
 wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-yum install -i  ./epel-release-latest-7.noarch.rpm
+yum install -y ./epel-release-latest-7.noarch.rpm
 yum -y install python-pip
 pip install ruamel.yaml
 if [ ! -d yamledit ]
